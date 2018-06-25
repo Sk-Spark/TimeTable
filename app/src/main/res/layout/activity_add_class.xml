@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="crawler.app.spark.timetable.AddClassActivity">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject"
+            android:textSize="25dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="24dp" />
+
+        <Spinner
+            android:id="@+id/spinnerSubject"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintLeft_toRightOf="@+id/textView4"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Day"
+            android:textSize="25dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            android:layout_marginLeft="24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="24dp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxDayMov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mon"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerSubject"
+            app:layout_constraintLeft_toRightOf="@+id/textView6"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxDayWed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wed"
+            app:layout_constraintLeft_toRightOf="@+id/checkBoxDayTues"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerSubject"
+            android:layout_marginStart="15dp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxDayThus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thus"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxDayMov"
+            android:layout_marginLeft="97dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="97dp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxDayFri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Fri"
+            app:layout_constraintLeft_toRightOf="@+id/checkBoxDayThus"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxDayTues"
+            android:layout_marginStart="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxDaySat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="16dp"
+            android:text="Sat"
+            app:layout_constraintLeft_toRightOf="@+id/checkBoxDayFri"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxDayWed"
+            android:layout_marginStart="30dp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxDayTues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tues"
+            app:layout_constraintLeft_toRightOf="@+id/checkBoxDayMov"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerSubject"
+            android:layout_marginStart="16dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textSize="25dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxDayThus"
+            android:layout_marginLeft="24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="24dp" />
+
+        <Button
+            android:id="@+id/buttonTimeFrom"
+            android:background="@drawable/button_style"
+            android:textColor="#fff"
+            android:padding="10dp"
+            android:layout_width="93dp"
+            android:layout_height="48dp"
+            android:text="From"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxDayThus"
+            app:layout_constraintLeft_toRightOf="@+id/textView7"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" />
+
+        <TextView
+            android:id="@+id/textViewTimeFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text=""
+            android:textSize="25dp"
+            app:layout_constraintLeft_toRightOf="@+id/buttonTimeFrom"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxDaySat"
+            android:layout_marginStart="16dp" />
+
+        <Button
+            android:id="@+id/buttonTimeTo"
+            android:background="@drawable/button_style"
+            android:textColor="#fff"
+            android:padding="10dp"
+            android:layout_width="96dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="96dp"
+            android:layout_marginTop="8dp"
+            android:text="To"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonTimeFrom"
+            android:layout_marginStart="96dp" />
+
+        <TextView
+            android:id="@+id/textViewTimeTo"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="23dp"
+            android:text=""
+            android:textSize="25dp"
+            app:layout_constraintLeft_toRightOf="@+id/buttonTimeTo"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTimeFrom"
+            android:layout_marginStart="16dp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type"
+            android:textSize="25dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/buttonTimeTo"
+            android:layout_marginLeft="24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="24dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonLab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lab"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/buttonTimeTo"
+            app:layout_constraintLeft_toRightOf="@+id/textView12"
+            android:layout_marginLeft="32dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonTecture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:checked="true"
+            android:text="Lecture"
+            app:layout_constraintLeft_toRightOf="@+id/radioButtonLab"
+            app:layout_constraintTop_toBottomOf="@+id/buttonTimeTo" />
+
+        <Button
+            android:id="@+id/buttonAddClass"
+            android:background="@drawable/button_style"
+            android:textColor="#fff"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="32dp"
+            android:text="Add Class"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioButtonTecture" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

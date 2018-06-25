@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/ic_home_black_24dp"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/about_us"
+            android:title="About Us" />
+
+        <item
+            android:id="@+id/nav_subject"
+            android:icon="@drawable/subjects"
+            android:title="Subjects" />
+
+        <!--<item-->
+            <!--android:id="@+id/nav_help"-->
+            <!--android:icon="@mipmap/ic_help_black_24dp"-->
+            <!--android:title="Help" />-->
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_power_off"
+            android:title="Exit" />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="single">
+        <!--<item-->
+            <!--android:id="@+id/nav_setting"-->
+            <!--android:icon="@mipmap/ic_settings_black_24dp"-->
+            <!--android:title="Setting" />-->
+        <item
+            android:id="@+id/nav_share"
+            android:icon="?attr/actionModeShareDrawable"
+            android:title="Share" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/contact_us"
+            android:title="Contact Us" />
+    </group>
+
+</menu>

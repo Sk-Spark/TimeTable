@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TimeTable</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_add_class">AddClassActivity</string>
+    <string name="mail_to_creater">shubhamkumar.mnnit.2017@gmail.com</string>
+    <string name="app_url">https://drive.google.com/open?id=1naSIFgHPvneXMChZG9_aOVFvxqFMmsnZ</string>
+
+</resources>
